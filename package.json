@@ -1,8 +1,8 @@
 {
-	"name": "image-viewer",
+	"name": "image-perview",
 	"version": "1.0.0",
 	"description": "image light box, image list viewer.",
-	"main": "index.js",
+	"main": "ImageViewer.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

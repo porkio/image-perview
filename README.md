@@ -1,4 +1,4 @@
-# image-viewer(图片查看器)
+# image-perview(图片查看器)
 
 ### Introduction
 
@@ -7,7 +7,7 @@
 ### Usage
 
 ```sh
-npm install image-viewer --save
+npm install image-perview --save
 
 import { ImageViewer } from 'image-viewer'
 
