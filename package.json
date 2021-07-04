@@ -1,0 +1,28 @@
+{
+	"name": "image-viewer",
+	"version": "1.0.0",
+	"description": "image light box, image list viewer.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/porkio/image-viewer.git"
+	},
+	"keywords": [
+		"lightbox",
+		"image viewer",
+		"image perview",
+		"imgPreview"
+	],
+	"author": "Pork",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/porkio/image-viewer/issues"
+	},
+	"homepage": "https://github.com/porkio/image-viewer#readme",
+	"dependencies": {
+		"swiper": "^6.7.5"
+	}
+}
