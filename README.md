@@ -11,7 +11,7 @@ npm install image-perview --save
 
 import ImagePerview from 'image-perview'
 
-const viewer = new ImageViewer({
+const viewer = new ImagePerview({
     current: 'current.jpg', // 当前图片URL
     list: [], // 所有需要预览的图片列表
     allowDownload: false, // 允许下载或保存图片
