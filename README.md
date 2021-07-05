@@ -4,11 +4,15 @@
 
 基于 Swiper 的极简 web 端（多端兼容）图片预览工具
 
-### Usage
+### Installation
 
 ```
 npm install image-perview --save
+```
 
+### Usage
+
+```
 import ImagePerview from 'image-perview'
 
 const viewer = new ImagePerview({
