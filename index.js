@@ -77,6 +77,8 @@ export default class ImagePerview {
 		)
 
 		document.body.appendChild(imgViewer)
+		document.body.style.overflowY = 'hidden'
+		document.documentElement.style.overflowY = 'hidden'
 
 		const _this = this
 
@@ -103,6 +105,8 @@ export default class ImagePerview {
 		typeof this.viewerBox !== 'undefined' &&
 			this.viewerBox !== null &&
 			document.body.removeChild(this.viewerBox)
+		document.body.style.overflowY = 'unset'
+		document.documentElement.style.overflowY = 'unset'
 		this.freed()
 	}
 
