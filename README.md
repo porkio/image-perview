@@ -2,14 +2,14 @@
 
 ### Introduction
 
-基于 Swiper 的 极简 web 端（多端兼容）图片预览工具
+基于 Swiper 的极简 web 端（多端兼容）图片预览工具
 
 ### Usage
 
-```sh
+```
 npm install image-perview --save
 
-import { ImageViewer } from 'image-viewer'
+import ImageViewer from 'image-viewer'
 
 const viewer = new ImageViewer({
     current: 'current.jpg', // 当前图片URL
