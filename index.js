@@ -10,9 +10,16 @@ export default class ImagePerview {
 			? options.allowDownload
 			: false
 		this.clientSize = this.getViewPortOffset()
+		this.imgViewerClassName = `image-perview-${parseInt(
+			Date.now() / (Math.random() * 1000)
+		)}`
+		this.swiperContainerClassName = `swiper-container-${parseInt(
+			Date.now() / (Math.random() * 1000)
+		)}`
 		this.viewerBox = this.init()
 	}
 
+	// 初始化查看器
 	init() {
 		const imgViewer = document.createElement('div')
 		const counter = document.createElement('div')
@@ -31,7 +38,8 @@ export default class ImagePerview {
 			)
 			.join('') // [1, 2, 3].map(item => 这里会把数组的逗号也解析出来) 用join('')可以抵消
 
-		swiperContainer.className = 'swiper-container'
+		imgViewer.className = this.imgViewerClassName
+		swiperContainer.className = this.swiperContainerClassName
 		swiperWrapper.className = 'swiper-wrapper'
 		swiperContainer.appendChild(swiperWrapper)
 		imgViewer.appendChild(swiperContainer)
@@ -72,7 +80,7 @@ export default class ImagePerview {
 
 		const _this = this
 
-		this.swiper = new Swiper('.swiper-container', {
+		this.swiper = new Swiper(`.${this.swiperContainerClassName}`, {
 			slidesPerView: 1,
 			initialSlide: this.currentIndex,
 			centeredSlides: true,
