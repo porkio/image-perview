@@ -16,6 +16,7 @@ export default class ImagePerview {
 		this.swiperContainerClassName = `swiper-container-${parseInt(
 			Date.now() / (Math.random() * 1000)
 		)}`
+		this.scrollTop = window.scrollY || document.documentElement.scrollTop
 		this.viewerBox = this.init()
 	}
 
@@ -77,8 +78,14 @@ export default class ImagePerview {
 		)
 
 		document.body.appendChild(imgViewer)
-		document.body.style.overflowY = 'hidden'
+
 		document.documentElement.style.overflowY = 'hidden'
+		document.documentElement.style.width = '100%'
+		document.documentElement.style.height = '100%'
+		document.body.style.position = 'relative'
+		document.body.style.width = '100%'
+		document.body.style.height = '100%'
+		document.body.style.overflowY = 'hidden'
 
 		const _this = this
 
@@ -101,12 +108,19 @@ export default class ImagePerview {
 		return imgViewer
 	}
 
-	removeSelf() {
+	removeSelf(scrollTop) {
 		typeof this.viewerBox !== 'undefined' &&
 			this.viewerBox !== null &&
 			document.body.removeChild(this.viewerBox)
-		document.body.style.overflowY = 'unset'
+
 		document.documentElement.style.overflowY = 'unset'
+		document.documentElement.style.width = 'unset'
+		document.documentElement.style.height = 'unset'
+		document.body.style.position = 'unset'
+		document.body.style.width = 'unset'
+		document.body.style.height = 'unset'
+		document.body.style.overflowY = 'unset'
+		document.documentElement.scrollTo(0, this.scrollTop)
 		this.freed()
 	}
 
