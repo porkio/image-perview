@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/porkio/image-viewer.git"
+		"url": "git+https://github.com/porkio/image-perview.git"
 	},
 	"keywords": [
 		"lightbox",
@@ -20,9 +20,9 @@
 	"author": "Pork",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/porkio/image-viewer/issues"
+		"url": "https://github.com/porkio/image-perview/issues"
 	},
-	"homepage": "https://github.com/porkio/image-viewer#readme",
+	"homepage": "https://github.com/porkio/image-perview#readme",
 	"dependencies": {
 		"swiper": "^6.7.5"
 	}
