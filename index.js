@@ -1,6 +1,6 @@
 import Swiper from 'swiper'
 
-export default class ImageViewer {
+export default class ImagePerview {
 	constructor(options) {
 		if (typeof options === 'undefined') return null
 		this.current = options.hasOwnProperty('current') ? options.current : ''

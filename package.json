@@ -2,7 +2,7 @@
 	"name": "image-perview",
 	"version": "1.0.1",
 	"description": "image light box, image list viewer.",
-	"main": "ImageViewer.js",
+	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

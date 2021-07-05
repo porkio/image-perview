@@ -9,7 +9,7 @@
 ```
 npm install image-perview --save
 
-import ImageViewer from 'image-viewer'
+import ImagePerview from 'image-perview'
 
 const viewer = new ImageViewer({
     current: 'current.jpg', // 当前图片URL
