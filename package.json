@@ -1,6 +1,6 @@
 {
 	"name": "image-perview",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "image light box, image list viewer.",
 	"main": "index.js",
 	"scripts": {
