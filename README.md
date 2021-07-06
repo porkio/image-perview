@@ -12,7 +12,7 @@ npm install image-perview --save
 
 ### Usage
 
-```
+```js
 import ImagePerview from 'image-perview'
 
 const viewer = new ImagePerview({
@@ -24,7 +24,7 @@ const viewer = new ImagePerview({
 
 ### Use in static pages
 
-```
+```js
 <script src="image-perview.js"></script>
 
 const viewer = new ImagePerview({
