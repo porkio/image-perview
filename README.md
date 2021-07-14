@@ -25,7 +25,7 @@ const viewer = new ImagePerview({
 ### Use in static pages
 
 ```js
-<script src="image-perview.js"></script>
+<script src="dist/image-perview.js"></script>
 
 const viewer = new ImagePerview({
   current: 'current.jpg', // 当前图片URL
@@ -33,3 +33,7 @@ const viewer = new ImagePerview({
   allowDownload: false, // 允许下载或保存图片
 })
 ```
+
+### LICENSE
+
+MIT@[Pork](https://github.com/porkio)
