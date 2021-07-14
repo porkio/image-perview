@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./dist/swiper-bundle.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box" style="width: 200px; height: 200px; background: #000;"></div>
+	<script src="./dist/swiper-bundle.min.js"></script>
+	<script src="./dist/image-perview.js"></script>
+	<script>
+		document.querySelector('#box').onclick = function () {
+			const imgPerview = new ImagePerview({
+				current: 'https://wlwo.net/images/default-avatar.jpg',
+				list: ['https://m1club.oss-cn-shenzhen.aliyuncs.com/v1/20210430-female-3.jpg', 'https://wlwo.net/images/default-avatar.jpg', 'https://m1club.oss-cn-shenzhen.aliyuncs.com/v1/20210430-female-3.jpg'],
+				allowDownload: false
+			})
+		}
+	</script>
+</body>
+</html>

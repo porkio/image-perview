@@ -1,6 +1,4 @@
-import Swiper from 'swiper'
-
-export default class ImagePerview {
+class ImagePerview {
 	constructor(options) {
 		if (typeof options === 'undefined') return null
 		this.current = options.hasOwnProperty('current') ? options.current : ''
@@ -30,12 +28,12 @@ export default class ImagePerview {
 			.map(
 				(img) =>
 					`<div class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
-                    <img class="swiper-slide-img" style="display: block; width: ${
+                    	<img class="swiper-slide-img" style="display: block; width: ${
 						this.clientSize.clientWidth <= 550 ? '100%' : 'auto'
-					}; pointer-events: ${
-						this.allowDownload ? 'unset' : 'none'
-					}" src="${img}" alt="" />
-            </div>`
+						}; pointer-events: ${
+							this.allowDownload ? 'unset' : 'none'
+						}" src="${img}" alt="" />
+            		</div>`
 			)
 			.join('') // [1, 2, 3].map(item => 这里会把数组的逗号也解析出来) 用join('')可以抵消
 
@@ -44,6 +42,7 @@ export default class ImagePerview {
 		swiperWrapper.className = 'swiper-wrapper'
 		swiperContainer.appendChild(swiperWrapper)
 		imgViewer.appendChild(swiperContainer)
+
 		imgViewer.style = `
                 width: 100vw;
                 height: 100vh;
@@ -93,6 +92,7 @@ export default class ImagePerview {
 			slidesPerView: 1,
 			initialSlide: this.currentIndex,
 			centeredSlides: true,
+			direction: 'horizontal',
 			on: {
 				slideChangeTransitionEnd: function () {
 					counter.innerHTML = `${this.realIndex + 1} / ${
@@ -146,3 +146,4 @@ export default class ImagePerview {
 		}
 	}
 }
+
